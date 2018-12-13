@@ -1,0 +1,167 @@
+<!-- 
+Name : Andrew Siew (aks42) 
+TA : Jeremy
+Assignement : HW 2
+This html code displays DD's profile 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="readable.css">
+		<title>Writing readable code</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<header class="main">writing readable code</header>
+		<div>
+			"Any fool can write code that a computer can understand.
+			<br>
+			Good programmers write code that humans can understand."
+			<br>
+			<br>
+			- Martin Fowler
+		</div>
+		<header>general guidelines</header>
+		<p>Writing clean and readable code is not hard, but it is very 
+			important towards the maintainability of your program.
+			<br>
+			Readability is achieved by through experience and practiced 
+			intuition, but can be guided by key principles including:
+		</p>
+		<ol>
+			<li><strong>Good variable names</strong>. Every variable should
+			    have an identifier (name) that directly reflects what it 
+			    represents. A variable that is describing the number of
+			    ducks in a pond might be called ducks or count but it shouldn't 
+			    be called something like pancakes. Never name your variables 
+			    as single letters (except for counters in for loops) or anything too abstract.
+			</li>
+			<li><strong>Function naming and responsibility</strong>. Make 
+				sure your functions also are named well represent what the 
+				function does. Every function should also have a single 
+				responsibility, something you could describe in a sentence 
+				or two. (This is called the SINGLE RESPONSIBILITY PRINCIPLE).
+			</li>
+			<li><strong>Proper formatting</strong>. Always maintain correct
+			    and consistent indentation, spacing, and location of curly 
+			    braces, if required by the language. One of the most helpful motivations 
+			    for clean and consistent formatting is to consider the
+			    perspective of the person trying to understand your code, making
+			    sure one could painlessly read and interpret your
+			    code's purpose through a consistent organization and hierarchal
+			    structure.
+			</li>
+			<li><strong>Clear documentation</strong>. You should provide 
+				clear documentation in all of your web development work, 
+				describing functions, key variables or constants, and any
+				particularly complex sections of 
+			    code. At the same time, your documentation should be
+			    client-focused, avoiding implementation details about how your 
+			    programs are implemented (this latter point is especially
+			    relevant when working with function-based programming languages 
+		        like JavaScript and PHP).
+		    </li>
+		</ol>
+		<img src="https://webster.cs.washington.edu/images/hw01/goodvsbad.png"
+			 alt="goodvsbad image">
+		<header>commenting for cse 154</header>
+		<header class="sub-header">commenting for your css and html code</header>
+		<p>The comment tag is used to insert comments in your HTML source code.
+		   Text written inside of comment tags are not displayed by the browser.
+		   The comment tag is <code>&lt;!-- your comment here --&gt;</code>.
+		   <br>
+		   <br>
+		   The comments in CSS are wrapped between <code> /* your comment here
+		   */</code>. Comments in HTML and CSS can also span multiple lines.
+		</p>
+	    <img src="https://webster.cs.washington.edu/images/hw01/htmlandcss.png" 
+	   		 alt="htmlandcss image">
+	    <header class="sub-header">commenting your javascript code</header>
+	    <p>
+	    	There are two different ways to comment in JavaScript code:
+	    </p>
+	    <ol>
+   			<li><strong>Single-line comments:</strong> Including  <code>//</code>
+	   		  in front of the single line of code that you want to comment out.
+	   		</li>
+	   		<li><strong>Multi-line comments:</strong> This method of commenting 
+	   			is exactly the same as commenting CSS files. You insert multiple lines of
+	   			<br>
+	   			code between the following: <code>/* your comment here */</code>
+	   		</li>
+	    </ol>
+	    <p>JavaScript is used <strong>boundlessly</strong> to develop huge 
+		   applications and Application Program Interfaces (APIs). Because of
+		   this, good documentation of the application is necessary. To 
+		   document our API's and applications, we use a documentation generator called
+	   	   <a href="http://usejsdoc.org/">JSDoc</a>.
+	   	   <br>
+	   	   Some of the important <a href="http://usejsdoc.org/">JSDoc</a> rules:
+	   	</p>
+	    <ol>
+		    <li>Each comment must start with a <code>/**</code> sequence in order to be
+			    recognized by the <a href="http://usejsdoc.org/">JSDoc</a> parser.
+			    Comments beginning with <code>/*</code>, <code>/***</code>, or more than 
+				3 stars will be ignored. This is to suppress parsing of comment blocks.
+			</li>
+		    <li>Use <a href="http://usejsdoc.org/">JSDoc</a> tags to provide more 
+		        information about the code:
+			    <ul>
+				    <li>If the function to be commented is a constructor, then add a 
+			   	    	<code>@constructor</code> tag to it.
+			   	    </li>
+			        <li>Use <code>@param {data type}</code> to tag the parameters. Each 
+			            parameter gets a different tag and on a different line.
+			        </li>
+				    <li>Use <code>@return {data type}</code> to tag the return type for the
+				        function. Explain what it represents in a sentence.
+				    </li>
+			    </ul>
+		    </li>
+		    <li>The comment should also include a single sentence description for 
+		   	    the function as well as for each parameter.
+		   	</li>
+	    </ol>
+	    <img src="https://webster.cs.washington.edu/images/hw01/jsdoc.png" alt="jsdoc image">
+	    <p>Though you are not required to for this class, you can generate the 
+	       documentation webpage, run the following command in a terminal
+	       window: <code>jsdoc relative-path/book.js</code>
+	       <br>
+	       This command will create a directory named <code>out/</code> in the 
+	       current working directory. Within that directory, you will find the generated HTML pages.
+	    </p>
+	    <header class="sub-header">commenting your php code</header>
+	    <p>Commenting in PHP is exactly the same as commenting in JavaScript 
+	       by using <code>//</code> for single-line comments and <code>/* ... 
+	   	   */</code> for multi-line comments.
+	   	   <br>
+	   	   <br>
+	       <strong>IMPORTANT NOTE</strong>: Make sure to add the comment 
+	       after the opening PHP tag as shown below.
+	    </p>
+	    <img src="https://webster.cs.washington.edu/images/hw01/php.png" 
+	    	 alt="jsdoc image"><br>
+	    <header class="sub-header">commenting your sql</header>
+	    <p>
+	       We're going to cut you some slack here... we don't require you to
+	       comment your SQL code (It is pretty much self-explanatory, isn't it?).
+	       <br>
+	       <br>
+	       Now that you have read this document, make this quote your mantra:
+	    </p>
+	    <div>"Writing well-documented code is not only important for communicating 
+    	        with others in your team.
+    	        <br>
+    	        It's also for communicating with yourself in the future."
+    	        <br>
+	   	        <br>
+	            - Dr. Lauren Bricker
+	    </div>
+	    <a class="button" href="https://jigsaw.w3.org/css-validator/#validate_by_input">
+	        <img src="https://webster.cs.washington.edu/images/w3c-css.png" alt="css validator img"></a>
+	    <a class="button" href="https://validator.w3.org/#validate_by_input">
+	    	<img src="https://webster.cs.washington.edu/images/w3c-html.png" alt="html validator img"></a>
+	   
+	</body>
+</html>

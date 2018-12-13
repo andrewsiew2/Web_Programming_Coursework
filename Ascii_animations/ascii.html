@@ -1,0 +1,75 @@
+<!-- 
+Name : Andrew Siew (aks42) 
+TA : Jeremy
+Assignement : HW 3
+This website showcases premade ascii animation in this interface. 
+The animations can be made to go at different speeds and sizes.
+-->
+
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+		<title>ASCIImation</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="ascii.css">
+		<script src="https://webster.cs.washington.edu/js/asciimation/animations.js"></script>
+		<script src="custom-animation.js"></script>
+		<script src="ascii.js"></script>
+	</head>
+	<body>
+		<header>ASCIImation</header>
+		<textarea cols="80" rows="20" id="text-area"></textarea>
+		<section>
+			<fieldset>
+				<legend>Play Controls</legend>
+				<div>
+					<button id="start_button">Start</button>
+					<button id="stop_button" disabled>Stop</button>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Animation</legend>
+				<select id="animation-dropbox">
+				    <option value="blank" selected>Blank</option>
+				    <option value="exercise">Exercise</option>
+				    <option value="juggler">Juggler</option>
+				    <option value="bike">Bike</option>
+				    <option value="dive">Dive</option>
+				    <option value="ducks">Ducks</option>
+				    <option value="pony">Pony</option>
+				    <option value="custom">Custom</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<legend>Size</legend>
+				<select id="size-dropbox">
+					<option value=7pt>Tiny</option>
+				    <option value=10pt>Small</option>
+				    <option value=12pt selected>Medium</option>
+				    <option value=16pt>Large</option>
+				    <option value=24pt>Extra Large</option>
+				    <option value=32pt>XXL</option>
+			    </select>
+			</fieldset>
+			<fieldset>
+				<legend>Speed</legend>
+				<form name="buttons">
+					<input type="radio" name="speed" value=50> Turbo
+					<input type="radio" name="speed" value=250 checked> Normal
+					<input type="radio" name="speed" value=1500> Slo-mo
+				</form>
+			</fieldset>
+		</section>
+		<footer>
+			<a href = "https://validator.w3.org/#validate_by_input">
+				<img src = "https://webster.cs.washington.edu/images/w3c-html-blue.png" 
+				alt="html-validator-button" /></a>
+			<a href = "https://jigsaw.w3.org/css-validator/#validate_by_input">
+				<img src = "https://webster.cs.washington.edu/images/w3c-css-blue.png" 
+				alt="css-validator-img"/></a>
+			<a href = "https://courses.cs.washington.edu/courses/cse154/17au/jslint/jslint.html">
+				<img src = "https://webster.cs.washington.edu/images/w3c-js-blue.png" 
+				alt="js-validator-img"/></a>
+		</footer>
+	</body>
+</html>

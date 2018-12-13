@@ -1,0 +1,42 @@
+<!-- CSE 154 Bestreads HTML File -->
+<!-- updated for 2018 -->
+<!-- You won't submit this file. Please don't edit it, otherwise, your JS might not work -->
+<!-- with the version provided by the course staff.                                      -->
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<title>Bestreads</title>
+		<link rel="stylesheet" type="text/css" href="bestreads.css" />
+		<script src="//courses.cs.washington.edu/courses/cse154/17au/lecture/AjaxCheckStatusHelper.js"></script>
+                <!-- Implement this bestreads.js file: -->
+		<script src="bestreads.js"></script>
+	</head>
+	<body>
+		<header>
+			<div>best<span>reads</span></div><span id="back">home</span>
+		</header>
+
+		<article id="error-message" class="hidden">
+			<h3 id="error-text"></h3>
+		</article>
+
+		<article id="allbooks">
+		</article>
+
+		<article id="singlebook">
+			<!-- Set to a provided tiny transparent img. Change the src as necessary -->
+			<img id="cover" src="small-transparent-pixel.png" alt="cover"/>
+
+			<section id="bookinfo">
+				<h1 id="title"></h1>
+				<h2 id="author"></h2>
+				<div id="stars"></div>
+				<p id="description"></p>
+			</section>
+
+			<section id="reviews">
+
+			</section>
+		</article>
+	</body>
+</html>

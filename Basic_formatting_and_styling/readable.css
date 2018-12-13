@@ -1,0 +1,69 @@
+/*
+Name : Andrew Siew (aks42) 
+TA : Jeremy
+Assignement : HW 1
+This css file is a stylesheet for a guide for writing readable code
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Acme|Rokkitt');
+
+body {
+    font-family: 'Rokkitt', serif;
+    font-size: 12px;
+    margin-right: 150px;
+    margin-left: 80px;
+    padding-bottom: 140px;
+}
+
+div {
+	text-align: center;
+	font-family: Amatic Sc;
+	background-color: #1bd8d8;
+	font-style: italic;
+	margin-right: 55px;
+    margin-left: 55px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+header {
+	color:#4ac3fd;
+	text-decoration: underline;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Acme', sans-serif;
+	font-size: 18px;
+	margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+header.main {
+	text-decoration: none;
+	font-size: 22px;
+	border-bottom: 2px solid #4ac3fd;
+	padding-top: 20px;
+	padding-bottom: 15px;
+
+}
+
+header.sub-header {
+	text-align: left;
+	font-size: 16px;
+}
+
+a.button {
+	float: right;
+	background-color: transparent;
+	border: none;
+}
+
+code {
+	background-color: #c7f3dc;
+	font-family: monospace;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
